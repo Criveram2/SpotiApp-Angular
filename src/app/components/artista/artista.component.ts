@@ -32,7 +32,7 @@ export class ArtistaComponent {
   getTopTracks(id: string){
     this.spotifyService.getTopTracksByIdArtista(id).subscribe((topTracks: any) => {
      console.log(topTracks);
-     this.topTracks =topTracks;
+     this.topTracks = topTracks;
     });
   }
 }

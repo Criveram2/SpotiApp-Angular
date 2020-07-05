@@ -29,7 +29,8 @@
                     <td class="text-white">{{track.album.name}}</td>
                     <td class="text-white">{{track.name}}</td>
                     <td>
-                        <audio [src]="track.preview_url" controls></audio>
+                        <!--audio [src]="track.preview_url" controls></audio-->
+                        <iframe [src]="track.uri | domseguro" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                     </td>
                 </tbody>
             </table>
